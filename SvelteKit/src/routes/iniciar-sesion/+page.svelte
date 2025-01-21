@@ -1,2 +1,2 @@
-<h1 class="bg-red-500">hola mundo</h1>
-<a href="./+page.svelte">devuelta al OG</a>
+<h1 class="bg-red-500">este inicia la sesion</h1>
+<a href="/">devuelta al OG</a>
