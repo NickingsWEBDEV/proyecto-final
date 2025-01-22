@@ -1,2 +1,24 @@
-<h1 class="bg-red-500">este inicia la sesion</h1>
-<a href="/">devuelta al OG</a>
+<!-- Pagina de inicio de sesion -->
+
+<main class="flex min-h-screen items-center justify-center bg-neutral-300 p-4">
+	<!-- caja principal -->
+
+	<!-- titulo -->
+
+	<div class="flex flex-col gap-9 rounded-2xl border-2 border-lime-500 bg-lime-500 p-7 text-xl">
+		<h1 class="flex rounded-full bg-gray-800 p-2 text-white">Iniciar Sesión</h1>
+
+		<!-- donde se colocaran las cosas -->
+
+		<input type="email" placeholder="Correo" class="flex rounded bg-slate-800 p-2" />
+		<input type="email" placeholder="Contraseña" class="flex rounded bg-slate-800 p-2" />
+
+		<!-- botones de la parte baja -->
+
+		<div class="flex flex-row space-x-5">
+			<button class="flex items-end rounded bg-gray-800 p-2 text-white">Login</button>
+			<button class="flex items-end rounded bg-gray-800 p-2 text-white">Create Account</button>
+		</div>
+	</div>
+	<a href="/">devuelta al OG</a>
+</main>
