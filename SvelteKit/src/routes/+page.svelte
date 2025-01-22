@@ -4,7 +4,9 @@
 <div class="flex min-h-screen flex-grow flex-col bg-neutral-300">
 	<nav>
 		<!-- Nombre de la compañia -->
-		<ul class="flex gap-4 rounded bg-stone-900 p-4 text-center text-zinc-300">
+		<ul
+			class="flex gap-4 rounded border-2 border-stone-700 bg-stone-900 p-4 text-center text-zinc-300"
+		>
 			<div class="text-5xl">Hip-Shop</div>
 
 			<!-- Boton de cuenta y settings -->
