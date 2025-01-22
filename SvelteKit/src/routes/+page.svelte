@@ -1,11 +1,11 @@
 <!-- Pagina Principal -->
 
-<!-- Barra superior -->
-<div class="flex min-h-screen flex-grow flex-col bg-neutral-300 p-4">
+<!-- color del fondo -->
+<div class="flex min-h-screen flex-grow flex-col bg-neutral-300">
 	<nav>
 		<!-- Nombre de la compañia -->
-		<ul class="flex gap-4 rounded bg-stone-900 text-zinc-300">
-			<div class=" text-5xl">Hip-Shop</div>
+		<ul class="flex gap-4 rounded bg-stone-900 p-4 text-center text-zinc-300">
+			<div class="text-5xl">Hip-Shop</div>
 
 			<!-- Boton de cuenta y settings -->
 			<div class="flex flex-grow flex-row justify-end gap-5 text-4xl">
@@ -14,8 +14,12 @@
 			</div>
 		</ul>
 
+		<!-- bienvenida y el nombre de usuario -->
+		<div class="flex justify-center p-3">
+			<h1 class=" w-36 border border-stone-900 text-center text-3xl">Welcome User</h1>
+		</div>
 		<!-- disttintos articulos -->
-		<div class="button-container">
+		<div class="button-container p-10 text-center text-3xl">
 			<a href="/accesorios" class="button border-2 border-red-500">Accesorios</a>
 
 			<a href="/placa-base" class="button border-2 border-red-500">Placas Base</a>
@@ -37,9 +41,9 @@
 	.button-container {
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: center;
+		justify-content: right;
 		align-items: center;
-		height: 630px;
+		height: 450px;
 		gap: 80px;
 		width: calc(55.44% - -350px);
 	}
