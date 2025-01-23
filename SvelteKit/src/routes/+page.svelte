@@ -11,28 +11,35 @@
 
 			<!-- Boton de cuenta y settings -->
 			<div class="flex flex-grow flex-row justify-end gap-5 text-4xl">
-				<a href="/administrar-cuentas">Cuenta</a>
+				<a href="/administrar-cuentas">
+					<span class="material-symbols-outlined"> manage_accounts </span>
+				</a>
+
 				<a href="/configuracion">Settings</a>
 			</div>
 		</ul>
 
 		<!-- bienvenida y el nombre de usuario -->
 		<div class="flex justify-center p-3">
-			<h1 class=" w-36 border border-stone-900 text-center text-3xl">Welcome User</h1>
+			<h1
+				class=" border-3 w-36 rounded-lg border-stone-700 bg-stone-900 text-center text-3xl text-zinc-300"
+			>
+				Welcome User
+			</h1>
 		</div>
 		<!-- disttintos articulos -->
 		<div class="button-container p-10 text-center text-3xl">
-			<a href="/accesorios" class="button border-2 border-red-500">Accesorios</a>
+			<a href="/accesorios" class="button border-2 border-amber-400 bg-amber-300">Accesorios</a>
 
-			<a href="/placa-base" class="button border-2 border-red-500">Placas Base</a>
+			<a href="/placa-base" class="button border-2 border-amber-400 bg-amber-300">Placas Base</a>
 
-			<a href="/procesador" class="button border-2 border-red-500">Procesador</a>
+			<a href="/procesador" class="button border-2 border-amber-400 bg-amber-300">Procesador</a>
 
-			<a href="/ram" class="button border-2 border-red-500">RAM</a>
+			<a href="/ram" class="button border-2 border-amber-400 bg-amber-300">RAM</a>
 
-			<a href="/disco-duro" class="button border-2 border-red-500">Disco Duro</a>
+			<a href="/disco-duro" class="button border-2 border-amber-400 bg-amber-300">Disco Duro</a>
 
-			<a href="/ventilador" class="button border-2 border-red-500">Ventilador</a>
+			<a href="/ventilador" class="button border-2 border-amber-400 bg-amber-300">Ventilador</a>
 		</div>
 	</nav>
 </div>

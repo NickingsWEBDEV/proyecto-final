@@ -17,7 +17,6 @@
 
 		<div class="flex flex-row space-x-5">
 			<button class="flex items-end rounded bg-gray-800 p-2 text-white">Login</button>
-			<button class="flex items-end rounded bg-gray-800 p-2 text-white">Create Account</button>
 		</div>
 	</div>
 	<a href="/">devuelta al OG</a>
