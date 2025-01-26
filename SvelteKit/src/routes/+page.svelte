@@ -12,7 +12,7 @@
 			<!-- Boton de cuenta y settings -->
 			<div class="flex flex-grow flex-row justify-end gap-5 text-4xl">
 				<a href="/administrar-cuentas">
-					<span class="material-symbols-outlined"> manage_accounts </span>
+					<span class="icon"> manage_accounts </span>
 				</a>
 
 				<a href="/configuracion">Settings</a>
