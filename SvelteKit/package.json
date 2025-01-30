@@ -4,6 +4,7 @@
 	"version": "0.0.1",
 	"type": "module",
 	"scripts": {
+"dev:surreal": "surreal start --user papush --password root --strict surrealkv://data --bind 127.0.0.1:8000",
 		"dev": "vite dev",
 		"build": "vite build",
 		"preview": "vite preview",

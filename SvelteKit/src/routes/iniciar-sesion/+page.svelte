@@ -5,8 +5,10 @@
 
 	<!-- titulo -->
 
-	<div class="flex flex-col gap-9 rounded-2xl border-2 border-lime-400 bg-lime-400 p-7 text-xl">
-		<h1 class="flex rounded-full bg-gray-800 p-2 text-white">Iniciar Sesión</h1>
+	<div class="flex flex-col gap-7 rounded-2xl border-2 border-lime-400 bg-lime-400 p-7 text-xl">
+		<h1 class="flex items-center justify-center rounded-full bg-gray-800 p-2 text-4xl text-white">
+			Iniciar Sesión
+		</h1>
 
 		<!-- donde se colocaran las cosas -->
 
@@ -19,5 +21,4 @@
 			<button class="flex items-end rounded bg-gray-800 p-2 text-white">Login</button>
 		</div>
 	</div>
-	<a href="/">devuelta al OG</a>
 </main>
