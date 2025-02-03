@@ -1,3 +1,9 @@
+<!-- experimento,espero funcione -->
+
+<!-- <enhanced:img src="./path/to/your/image.jpg" alt="An alt text" /> -->
+
+<!-- cajas -->
+
 <main class="flex min-h-screen items-center justify-center bg-neutral-300">
 	<div class="flex-cols flex gap-64">
 		<!-- caja de objetos -->
