@@ -1,24 +1,52 @@
-<!-- Pagina de inicio de sesion -->
+<script>
+	import Background from '$lib/components/Background.svelte';
+	import { goto } from '$app/navigation';
+	import { signIn } from '$lib/surreal';
 
-<main class="flex min-h-screen items-center justify-center bg-neutral-300 p-4">
-	<!-- caja principal -->
+	let correo = $state('');
+	let contrasena = $state('');
+	let mostrarErrorGenerico = $state(false);
+</script>
 
-	<!-- titulo -->
+<!-- caja principal -->
+<Background>
+	<main class="flex min-h-screen items-center justify-center">
+		<form
+			class="flex flex-col gap-2"
+			onsubmit={async (e) => {
+				e.preventDefault();
 
-	<div class="flex flex-col gap-7 rounded-2xl border-2 border-lime-400 bg-lime-400 p-7 text-xl">
-		<h1 class="flex items-center justify-center rounded-full bg-gray-800 p-2 text-4xl text-white">
-			Iniciar Sesión
-		</h1>
+				try {
+					await signIn(correo, contrasena);
 
-		<!-- donde se colocaran las cosas -->
+					goto('/');
+				} catch (err) {
+					mostrarErrorGenerico = true;
+				}
 
-		<input type="email" placeholder="Correo" class="flex rounded bg-slate-900 p-2" />
-		<input type="email" placeholder="Contraseña" class="flex rounded bg-slate-900 p-2" />
+				goto('/');
+			}}
+		>
+			<!-- titulo -->
 
-		<!-- botones de la parte baja -->
+			<div class="flex flex-col gap-7 rounded-2xl border-2 border-lime-400 bg-lime-400 p-7 text-xl">
+				<h1
+					class="flex items-center justify-center rounded-full bg-gray-800 p-2 text-4xl text-white"
+				>
+					Iniciar Sesión
+				</h1>
 
-		<div class="flex flex-row space-x-5">
-			<button class="flex items-end rounded bg-gray-800 p-2 text-white">Login</button>
-		</div>
-	</div>
-</main>
+				<!-- donde se colocara la info -->
+
+				<input type="email" placeholder="Correo" class="flex rounded bg-slate-900 p-2" />
+				<input type="password" placeholder="Contraseña" class="flex rounded bg-slate-900 p-2" />
+
+				<!-- boton de la parte baja -->
+
+				<div class="flex flex-row space-x-5">
+					<button class="flex items-end rounded bg-gray-800 p-2 text-white">Login</button>
+				</div>
+			</div>
+		</form>
+	</main>
+</Background>
