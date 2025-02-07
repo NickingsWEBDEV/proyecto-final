@@ -10,5 +10,7 @@
 </script>
 
 <div class={'bg-amber-200 p-3 shadow-sm shadow-black'}>
-	{@render children()}
+	<button class="flex items-end rounded bg-amber-500 p-2 text-white">
+		{@render children()}
+	</button>
 </div>

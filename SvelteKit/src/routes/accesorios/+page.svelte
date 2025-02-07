@@ -10,21 +10,14 @@
 <!-- cajas -->
 
 <Background>
+	<a href="/" class="flex">devuelta al OG</a>
+
 	<main class="flex min-h-screen items-center justify-center">
 		<div class="flex-cols flex gap-64">
 			<!-- caja de objetos -->
-			<div class="bg-amber-200 p-3 shadow-sm shadow-black">
-				<button class="flex items-end rounded bg-amber-500 p-2 text-white">Pasta Termica</button>
-			</div>
-
-			<div class="bg-amber-200 p-3 shadow-sm shadow-black">
-				<button class="flex items-end rounded bg-amber-500 p-2 text-white">Pasta Termica</button>
-			</div>
-
-			<div class="bg-amber-200 p-3 shadow-sm shadow-black">
-				<button class="flex items-end rounded bg-amber-500 p-2 text-white">Pasta Termica</button>
-			</div>
-			<Articulos><h1></h1></Articulos>
+			<Articulos>pasta termica</Articulos>
+			<Articulos>pasta termica</Articulos>
+			<Articulos>pasta termica</Articulos>
 		</div>
 	</main>
 </Background>
