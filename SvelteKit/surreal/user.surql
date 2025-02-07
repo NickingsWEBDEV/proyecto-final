@@ -1,3 +1,5 @@
+//define la forma de acceso del usuario
+
 DEFINE ACCESS account
   ON DATABASE
   TYPE record
@@ -23,6 +25,8 @@ DEFINE ACCESS account
 DEFINE TABLE user SCHEMAFULL
   PERMISSIONS
     FOR select WHERE $auth = id;
+
+//define el los campos y tablas de user
 
 DEFINE FIELD name ON TABLE user TYPE string;
 DEFINE FIELD email ON TABLE user TYPE string ASSERT string::is::email($value);

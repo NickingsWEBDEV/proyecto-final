@@ -1,7 +1,6 @@
-<script>
+<script lang="ts">
 	import Background from '$lib/components/Background.svelte';
 	import { goto } from '$app/navigation';
-	import { signIn } from '$lib/surreal';
 
 	let correo = $state('');
 	let contrasena = $state('');
@@ -17,7 +16,7 @@
 				e.preventDefault();
 
 				try {
-					await signIn(correo, contrasena);
+					//await signIn(correo, contrasena);
 
 					goto('/');
 				} catch (err) {
