@@ -33,11 +33,13 @@
 			</div>
 			<!-- disttintos articulos -->
 			<div class="button-container p-10 text-center text-3xl">
-				<a href="/accesorios" class="button border-2 border-amber-400 bg-amber-300">Accesorios</a>
+				<a href="/accesorios" class=" button border-2 border-amber-400 bg-amber-300">Accesorios</a>
 
 				<a href="/placa-base" class="button border-2 border-amber-400 bg-amber-300">Placas Base</a>
 
-				<a href="/procesador" class="button border-2 border-amber-400 bg-amber-300">Procesador</a>
+				<a href="/procesador" class="button border-2 border-amber-400 bg-amber-300 text-center"
+					>Procesador</a
+				>
 
 				<a href="/ram" class="button border-2 border-amber-400 bg-amber-300">RAM</a>
 

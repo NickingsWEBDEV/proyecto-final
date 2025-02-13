@@ -14,7 +14,7 @@
 			class="text center flex flex-col gap-4 rounded-2xl border-2 border-stone-400 bg-stone-500 p-7 text-xl"
 		>
 			<h1
-				class="flex items-center justify-center rounded-full bg-amber-300 p-2 text-4xl text-white"
+				class="flex items-center justify-center rounded-full bg-amber-300 p-3 text-4xl text-white"
 			>
 				Nuevo Usuario
 			</h1>
@@ -32,7 +32,9 @@
 			<!-- botones de la parte baja -->
 
 			<div class="flex flex-row space-x-5">
-				<button class="flex items-end rounded bg-amber-500 p-2 text-white">Create Account</button>
+				<a href="/administrar-cuentas" class="flex items-end rounded bg-amber-500 p-2 text-white"
+					>Create Account</a
+				>
 			</div>
 		</div>
 		<a href="/">devuelta al OG</a>
