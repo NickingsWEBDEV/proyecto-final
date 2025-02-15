@@ -1,17 +1,16 @@
 <script>
 	import Background from '$lib/components/Background.svelte';
+	import Regreso from '$lib/components/Regreso.svelte';
 </script>
 
 <Background>
 	<!-- boton para volver -->
-	<a
-		href="/"
-		class="gap-4 rounded-full border-2 border-stone-200 bg-amber-400 p-4 text-6xl text-white">«</a
-	>
+
+	<Regreso>a</Regreso>
 
 	<main class="flex min-h-screen flex-col items-center justify-center">
 		<!-- background de la caja -->
-		<div class="flex flex-col gap-3 rounded-sm border-stone-400 bg-stone-500 p-6">
+		<div class="flex flex-col gap-3 rounded-sm border-stone-400 bg-stone-500">
 			<h1 class="rounded-md bg-amber-300 p-2 text-3xl text-white">Administrador de Cuentas</h1>
 
 			<!-- contenido de la caja -->

@@ -1,10 +1,13 @@
 <script>
 	import Background from '$lib/components/Background.svelte';
+	import Regreso from '$lib/components/Regreso.svelte';
 </script>
 
 <!-- Pagina de crear cuenta -->
 
 <Background>
+	<Regreso>a</Regreso>
+
 	<main class="flex min-h-screen items-center justify-center">
 		<!-- caja principal -->
 
@@ -13,11 +16,7 @@
 		<div
 			class="text center flex flex-col gap-4 rounded-2xl border-2 border-stone-400 bg-stone-500 p-7 text-xl"
 		>
-			<h1
-				class="flex items-center justify-center rounded-full bg-amber-300 p-3 text-4xl text-white"
-			>
-				Nuevo Usuario
-			</h1>
+			<h1 class="flex rounded-full bg-amber-300 p-3 text-4xl text-white">Nuevo Usuario</h1>
 
 			<!-- donde se colocaran las cosas -->
 			<input type="" placeholder="Nombre" class="flex rounded bg-amber-200 p-2" />
@@ -37,6 +36,5 @@
 				>
 			</div>
 		</div>
-		<a href="/">devuelta al OG</a>
 	</main>
 </Background>
