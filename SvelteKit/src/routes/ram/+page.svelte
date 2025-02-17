@@ -1,17 +1,30 @@
 <script>
 	import Background from '$lib/components/Background.svelte';
 	import Articulos from '$lib/components/Articulos.svelte';
+	import Regreso from '$lib/components/Regreso.svelte';
 </script>
 
 <Background>
-	<a href="/" class="flex">devuelta al OG</a>
+	<Regreso>s</Regreso>
+	<h1 class="flex items-end justify-end p-1 text-xl text-neutral-400">
+		|"That's what I always say, they can put my clothes back on, they never do"
+	</h1>
 
 	<main class="flex min-h-screen items-center justify-center">
-		<div class="flex-cols flex gap-64">
+		<div class="flex-cols flex gap-64 text-2xl">
 			<!-- caja de objetos -->
-			<Articulos>pasta termica</Articulos>
-			<Articulos>pasta termica</Articulos>
-			<Articulos>pasta termica</Articulos>
+
+			<a href="/artic-kingstone">
+				<Articulos>Kingstone</Articulos>
+			</a>
+			<a href="/artic-adata">
+				<Articulos>ADATA</Articulos>
+			</a>
+
+			<a href="/artic-knowhare">
+				<Articulos>Knowhare</Articulos>
+			</a>
+			<!-- el de arriba es inventado -->
 		</div>
 	</main>
 </Background>

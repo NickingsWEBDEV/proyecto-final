@@ -1,30 +1,26 @@
 //define la forma de acceso del usuario
-
-DEFINE ACCESS account
-  ON DATABASE
-  TYPE record
-    SIGNUP (
-      CREATE user CONTENT {
-        name: $name,
-        email: $email,
-        password_hash: crypto::argon2::generate($password),
-      }
-    )
-    SIGNIN (
-      SELECT *
-      FROM user
-      WHERE
-        email = $email
-        AND
-        crypto::argon2::compare(password_hash, $password)
-    )
-  DURATION
-    FOR TOKEN 1h
-    FOR SESSION 5m;
-
+DEFINE ACCESS user ON DATABASE TYPE RECORD 
+SIGNUP (
+CREATE user CONTENT {
+    name: $name,
+    email: $email,
+    password: crypto::argon2::generate($password)
+}
+)
+SIGNIN (
+SELECT * FROM user WHERE email = $email AND crypto::argon2::compare(password, $password) 
+)
+AUTHENTICATE {
+    IF type::thing("token", $token.jti).revoked = true {
+       THROW "this token has been revoked";
+    };
+   INSERT INTO token { id: $token.jti, exp: $token.exp, revoked: false };
+   CREATE audit CONTENT { token: $token.jti, time: time::now() };
+}
+DURATION FOR TOKEN 15m, FOR SESSION 12h;
 DEFINE TABLE user SCHEMAFULL
-  PERMISSIONS
-    FOR select WHERE $auth = id;
+ PERMISSIONS
+   FOR select WHERE $auth = id;
 
 //define el los campos y tablas de user
 

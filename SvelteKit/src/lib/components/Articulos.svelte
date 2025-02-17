@@ -9,8 +9,12 @@
 	const { class: className = '', children }: Props = $props();
 </script>
 
-<div class={'bg-amber-200 p-3 shadow-sm shadow-black'}>
-	<button class="flex items-end rounded bg-amber-500 p-2 text-white">
+<div
+	class={'rounded-lg bg-neutral-500 p-3 shadow-md shadow-black transition-colors hover:bg-neutral-400'}
+>
+	<button
+		class="flex items-end rounded bg-gray-400 p-2 text-white transition-colors hover:bg-gray-300"
+	>
 		{@render children()}
 	</button>
 </div>

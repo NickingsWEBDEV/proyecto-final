@@ -19,36 +19,46 @@
 			<a href="/administrar-cuentas">
 				<span class="icon"> manage_accounts </span>
 			</a>
-
-			<a href="/configuracion">Settings</a>
 		</div>
 	</ul>
+
+	<!-- Frase -->
+
+	<h1 class="text-col flex p-2 text-neutral-400">
+		|"The world still holds infinite posibilities, that you are yet to know"
+	</h1>
 
 	<nav class="text-center text-3xl">
 		<!-- disttintos articulos -->
 
 		<div class="flex-cols flex gap-60 p-60 text-center text-3xl">
-			<div class="rounded-md border-2 bg-neutral-500 p-8 shadow-sm shadow-black">
+			<div
+				class="rounded-md border-2 bg-neutral-500 p-8 shadow-sm shadow-black transition-colors hover:bg-gray-400"
+			>
 				<a
 					href="/procesador"
-					class="flex items-end rounded bg-gray-400 p-2 text-white transition-colors hover:bg-amber-200"
+					class="flex items-end rounded bg-gray-400 p-3 text-white transition-colors hover:bg-gray-300"
 					>Procesador</a
 				>
 			</div>
 
-			<div class="rounded-md border-2 bg-neutral-500 p-8 shadow-sm shadow-black">
+			<div
+				class="rounded-md border-2 bg-neutral-500 p-8 shadow-sm shadow-black transition-colors hover:bg-gray-400"
+			>
 				<a
 					href="/ram"
-					class="flex items-end rounded bg-gray-400 p-2 text-white transition-colors hover:bg-amber-200"
+					class="flex items-end rounded bg-gray-400 p-3 text-white transition-colors hover:bg-gray-300"
 					>RAM</a
 				>
 			</div>
 
-			<div class="rounded-md border-2 bg-neutral-500 p-8 shadow-sm shadow-black">
+			<div
+				class="rounded-md border-2 bg-neutral-500 p-8 shadow-sm shadow-black transition-colors hover:bg-gray-400"
+			>
 				<a
 					href="/ventilador"
-					class="flex items-end rounded bg-gray-400 p-2 text-white transition-colors hover:bg-amber-200"
-					>Ventiladores</a
+					class="flex items-end rounded bg-gray-400 p-3 text-white transition-colors hover:bg-gray-300"
+					>Disipadores</a
 				>
 			</div>
 		</div>
