@@ -2,6 +2,20 @@
 	import Background from '$lib/components/Background.svelte';
 	import Productos from '$lib/components/productos.svelte';
 	import Regreso from '$lib/components/Regreso.svelte';
+	// bases del contador
+
+	let count = 15;
+	const minCount = 0;
+
+	function increment() {
+		count++;
+	}
+
+	function decrement() {
+		if (count > minCount) {
+			count--;
+		}
+	}
 </script>
 
 <Background>
@@ -26,15 +40,24 @@
 				"Aqui va una imagen"
 			</button>
 
+			<!-- contador -->
+			<h1 class="flex items-center justify-center rounded-full border-2 bg-slate-700 p-2">
+				QTY: {count}
+			</h1>
+
 			<!-- texto que describe el articulo -->
 
 			<h1>• Descripcion del articulo aqui</h1>
 		</div>
 
 		<!-- botones para agregar y restar inventario -->
-		<div class="flex flex-col-reverse gap-4">
-			<button class="flex rounded bg-slate-700 p-4 text-2xl text-white"> + </button>
-			<button class="flex rounded bg-slate-700 p-4 text-3xl text-white"> - </button>
+		<div class="flex flex-col gap-4">
+			<button onclick={increment} class="flex rounded bg-slate-700 p-4 text-2xl text-white">
+				+
+			</button>
+			<button onclick={decrement} class="flex rounded bg-slate-700 p-4 text-2xl text-white">
+				-
+			</button>
 		</div>
 
 		<!-- qr code generator -->

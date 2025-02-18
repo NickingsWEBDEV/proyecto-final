@@ -22,8 +22,8 @@ DEFINE TABLE OVERWRITE user SCHEMAFULL
 //define el los campos y tablas de user
 
 DEFINE FIELD OVERWRITE name ON TABLE user TYPE string;
-DEFINE FIELD email OVERWRITE ON TABLE user TYPE string ASSERT string::is::email($value);
-DEFINE FIELD password_hash OVERWRITE ON TABLE user TYPE string;
+DEFINE FIELD OVERWRITE email ON TABLE user TYPE string ASSERT string::is::email($value);
+DEFINE FIELD OVERWRITE password_hash ON TABLE user TYPE string;
 
 
 DEFINE INDEX OVERWRITE unique_email ON TABLE user FIELDS email UNIQUE;

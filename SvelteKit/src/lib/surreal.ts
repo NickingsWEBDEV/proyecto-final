@@ -3,7 +3,10 @@ import { browser } from '$app/environment';
 
 const db = new Surreal();
 
-await db.connect('http://localhost:8000', { namespace: 'admin.general', database: 'main' });
+await db.connect('http://localhost:8000/rpc', {
+	namespace: 'admin.general',
+	database: 'main'
+});
 
 let isSignedIn = false;
 

@@ -11,12 +11,11 @@
 
 <!-- caja principal -->
 <Background>
-	<!-- Titulo -->
-
 	<h1 class="flex items-end justify-end p-2 text-neutral-500">
 		|"Failure is acceptable, giving up is not.".
 	</h1>
 
+	<!-- forma de iniciar sesion -->
 	<main class="flex min-h-screen items-center justify-center">
 		<form
 			class="flex flex-col gap-2"
