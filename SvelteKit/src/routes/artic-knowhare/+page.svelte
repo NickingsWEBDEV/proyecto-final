@@ -23,13 +23,19 @@
 		<div class={'rounded-md bg-neutral-500 p-3 shadow-sm shadow-black'}>
 			<!-- imagen del articulo -->
 
-			<button class="flex items-end rounded bg-slate-700 p-2 text-white">
-				"Aqui va una imagen"
-			</button>
+			<img
+				src="/image/groot.webp"
+				alt="Come and get your love"
+				class="flex items-end rounded bg-slate-700 p-2 text-white"
+			/>
 
 			<!-- texto que describe el articulo -->
 
-			<h1>• Descripcion del articulo aqui</h1>
+			<h1 class="w-full max-w-sm gap-4 bg-slate-600 p-3 text-sm">
+				• Esta RAM es una de las mas veloces del mercado, presumiendo su capacidad para "Realizar
+				saltos luz" y ser la marca preferida por la NASA. fue muy dificil de conseguir, tuve que
+				intercambiar una protesis por solo un set de esas, asi que espero que no la hayas vendido.
+			</h1>
 		</div>
 
 		<!-- botones para agregar y restar inventario -->

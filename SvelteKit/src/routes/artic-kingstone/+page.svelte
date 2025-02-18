@@ -25,13 +25,18 @@
 		<div class={'rounded-md bg-neutral-500 p-3 shadow-sm shadow-black'}>
 			<!-- imagen del articulo -->
 
-			<button class="flex items-end rounded bg-slate-700 p-2 text-white">
-				"Aqui va una imagen"
-			</button>
+			<img
+				src="/image/kingstone.jpg"
+				alt="Qualcomm Snapdragon"
+				class="flex items-end rounded bg-slate-700 p-2 text-white"
+			/>
 
 			<!-- texto que describe el articulo -->
 
-			<h1>• Descripcion del articulo aqui</h1>
+			<h1 class="w-full max-w-sm gap-4 bg-slate-600 p-3 text-sm">
+				• Mientras realices este inventario encontraras muy pocos de esta marca, nunca entendi
+				porque siempre faltaban y siento sinceros nunca me importo. PS: Si faltan no pidas mas.
+			</h1>
 		</div>
 
 		<!-- botones para agregar y restar inventario -->

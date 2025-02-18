@@ -23,13 +23,18 @@
 		<div class={'rounded-md bg-neutral-500 p-3 shadow-sm shadow-black'}>
 			<!-- imagen del articulo -->
 
-			<button class="flex items-end rounded bg-slate-700 p-2 text-white">
-				"Aqui va una imagen"
-			</button>
+			<img
+				src="/image/amdCore.jpeg"
+				alt="Qualcomm Snapdragon"
+				class="flex items-end rounded bg-slate-700 p-2 text-white"
+			/>
 
 			<!-- texto que describe el articulo -->
 
-			<h1>• Descripcion del articulo aqui</h1>
+			<h1 class="w-full max-w-sm gap-4 bg-slate-600 p-3 text-sm">
+				• La segunda marca mas popular de la tienda, siempre es crucial pedir un cargamento extra de
+				esta marca
+			</h1>
 		</div>
 
 		<!-- botones para agregar y restar inventario -->

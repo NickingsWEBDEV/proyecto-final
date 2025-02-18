@@ -1,5 +1,4 @@
 <script>
-	// import intelCore from '$static/image/intelCore.jpeg';
 	import Background from '$lib/components/Background.svelte';
 	import Productos from '$lib/components/productos.svelte';
 	import Regreso from '$lib/components/Regreso.svelte';
@@ -24,7 +23,11 @@
 		<div class={'rounded-md bg-neutral-500 p-3 shadow-sm shadow-black'}>
 			<!-- imagen del articulo -->
 
-			<img src="" alt="intelCore" class="flex items-end rounded bg-slate-700 p-2 text-white" />
+			<img
+				src="/image/intelCore.jpeg"
+				alt="intelCore"
+				class="flex items-end rounded bg-slate-700 p-2 text-white"
+			/>
 
 			<!-- texto que describe el articulo -->
 

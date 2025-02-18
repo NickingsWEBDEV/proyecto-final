@@ -22,16 +22,20 @@
 	</h1>
 
 	<main class="flex min-h-screen items-center justify-center gap-4 rounded-full">
-		<div class={'rounded-md bg-neutral-500 p-3 shadow-sm shadow-black'}>
+		<div class={'rounded-md bg-neutral-500 p-4 shadow-sm shadow-black'}>
 			<!-- imagen del articulo -->
 
-			<button class="flex items-end rounded bg-slate-700 p-2 text-white">
-				"Aqui va una imagen"
-			</button>
-
+			<img
+				src="/image/qualcomm.jpeg"
+				alt="Qualcomm Snapdragon"
+				class="flex items-end rounded bg-slate-700 p-2 text-white"
+			/>
 			<!-- texto que describe el articulo -->
 
-			<h1>• Descripcion del articulo aqui</h1>
+			<h1 class="w-full max-w-sm gap-4 bg-slate-600 p-3 text-sm">
+				• rara vez entran tecnicos a la tienda, pero las pocas veces que llegan suelen llevarse
+				varios de estos. Si se llegan a agotar informar inmediatamente.
+			</h1>
 		</div>
 
 		<!-- botones para agregar y restar inventario -->
