@@ -1,4 +1,5 @@
 <script>
+	// import intelCore from '$static/image/intelCore.jpeg';
 	import Background from '$lib/components/Background.svelte';
 	import Productos from '$lib/components/productos.svelte';
 	import Regreso from '$lib/components/Regreso.svelte';
@@ -23,13 +24,11 @@
 		<div class={'rounded-md bg-neutral-500 p-3 shadow-sm shadow-black'}>
 			<!-- imagen del articulo -->
 
-			<button class="flex items-end rounded bg-slate-700 p-2 text-white">
-				"Aqui va una imagen"
-			</button>
+			<img src="" alt="intelCore" class="flex items-end rounded bg-slate-700 p-2 text-white" />
 
 			<!-- texto que describe el articulo -->
 
-			<p class="text-sm">
+			<p class="w-full max-w-sm text-sm">
 				• Procesador mas comun del mercado, su alta demanda lo hace insispensable para la tienda y
 				en caso de quedar pocas existencias, revastecer lo antes posible
 			</p>

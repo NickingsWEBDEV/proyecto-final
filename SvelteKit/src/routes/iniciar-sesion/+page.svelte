@@ -1,8 +1,9 @@
 <script lang="ts">
 	import Background from '$lib/components/Background.svelte';
 	import { goto } from '$app/navigation';
+	import { signIn } from '$lib/surreal';
+	import Alert from '$lib/components/Alert.svelte';
 
-	let signIn = $state();
 	let correo = $state('');
 	let contrasena = $state('');
 	let mostrarErrorGenerico = $state(false);
@@ -23,7 +24,7 @@
 				e.preventDefault();
 
 				try {
-					// await signIn(correo, contrasena);
+					await signIn(correo, contrasena);
 
 					goto('/');
 				} catch (err) {
@@ -44,13 +45,21 @@
 
 				<!-- donde se colocara la info -->
 
-				<input type="email" placeholder="Correo" class="flex rounded bg-slate-900 p-2 text-white" />
 				<input
+					bind:value={correo}
+					type="email"
+					placeholder="Correo"
+					class="flex rounded bg-slate-900 p-2 text-white"
+					required
+				/>
+				<input
+					bind:value={contrasena}
 					type="password"
 					placeholder="Contraseña"
 					class="flex rounded bg-slate-900 p-2 text-white"
+					required
 				/>
-
+				<Alert show={mostrarErrorGenerico} message="El Correo/Contraseña son inválidos" />
 				<!-- boton de la parte baja -->
 
 				<div class="flex flex-row space-x-5">
