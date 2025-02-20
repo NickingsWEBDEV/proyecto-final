@@ -33,31 +33,31 @@
 
 		<div class="flex-cols flex gap-60 p-60 text-center text-3xl">
 			<div
-				class="rounded-md border-2 bg-neutral-500 p-8 shadow-sm shadow-black transition-colors hover:bg-gray-400"
+				class="rounded-md border-2 bg-neutral-600 p-8 shadow-sm shadow-black transition-colors hover:bg-gray-500"
 			>
 				<a
 					href="/procesador"
-					class="flex items-end rounded bg-gray-400 p-3 text-white transition-colors hover:bg-gray-300"
+					class="flex items-end rounded bg-gray-500 p-3 text-white transition-colors hover:bg-gray-400"
 					>Procesador</a
 				>
 			</div>
 
 			<div
-				class="rounded-md border-2 bg-neutral-500 p-8 shadow-sm shadow-black transition-colors hover:bg-gray-400"
+				class="rounded-md border-2 bg-neutral-600 p-8 shadow-sm shadow-black transition-colors hover:bg-gray-500"
 			>
 				<a
 					href="/ram"
-					class="flex items-end rounded bg-gray-400 p-3 text-white transition-colors hover:bg-gray-300"
+					class="flex items-end rounded bg-gray-500 p-3 text-white transition-colors hover:bg-gray-400"
 					>RAM</a
 				>
 			</div>
 
 			<div
-				class="rounded-md border-2 bg-neutral-500 p-8 shadow-sm shadow-black transition-colors hover:bg-gray-400"
+				class="rounded-md border-2 bg-neutral-600 p-8 shadow-sm shadow-black transition-colors hover:bg-gray-500"
 			>
 				<a
 					href="/ventilador"
-					class="flex items-end rounded bg-gray-400 p-3 text-white transition-colors hover:bg-gray-300"
+					class="flex items-end rounded bg-gray-500 p-3 text-white transition-colors hover:bg-gray-400"
 					>Disipadores</a
 				>
 			</div>
