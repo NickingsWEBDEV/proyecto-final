@@ -30,15 +30,19 @@
 	</button>
 
 	<!-- titulo -->
-	<h1 class="flex justify-start text-xl text-neutral-400">|""</h1>
+	<h1 class="flex justify-start text-xl text-neutral-400">
+		|"Es reconfortante saber lo completamente solos, que no estamos".
+	</h1>
 
 	<main class="flex min-h-screen items-center justify-center gap-4 rounded-full">
 		<div class={'rounded-md bg-neutral-500 p-3 shadow-sm shadow-black'}>
 			<!-- imagen del articulo -->
 
-			<button class="flex items-end rounded bg-slate-700 p-2 text-white">
-				"Aqui va una imagen"
-			</button>
+			<img
+				src="/image/estam_fin.webp"
+				alt="Qualcomm Snapdragon"
+				class="flex items-end rounded bg-slate-700 p-2 text-white"
+			/>
 
 			<!-- contador -->
 			<h1 class="flex items-center justify-center rounded-full border-2 bg-slate-700 p-2">
@@ -47,7 +51,10 @@
 
 			<!-- texto que describe el articulo -->
 
-			<h1>• Descripcion del articulo aqui</h1>
+			<h1 class="w-full max-w-sm text-sm">
+				| Estos disipadores estan hechos mayormente de cobre, permitiendoles absorber mas calor y a
+				mi poder cobrarlos aun mayor precio. Si se llegaran a agotar informar inmediatamente
+			</h1>
 		</div>
 
 		<!-- botones para agregar y restar inventario -->
@@ -69,7 +76,7 @@
 		<!-- qr code generator -->
 
 		<button class="flex rounded bg-slate-700 p-4 text-white hover:bg-slate-600">
-			QR Escaner
+			<a href="artic-fin/qr-fin"> QR Escaner</a>
 		</button>
 	</main>
 </Background>

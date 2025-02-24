@@ -77,7 +77,7 @@
 		<!-- qr code generator -->
 
 		<button class="flex rounded bg-slate-700 p-4 text-white hover:bg-slate-600">
-			QR Escaner
+			<a href="artic-knowhare/qr-knowhare"> QR Escaner</a>
 		</button>
 	</main>
 </Background>

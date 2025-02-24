@@ -37,9 +37,11 @@
 		<div class={'rounded-md bg-neutral-500 p-3 shadow-sm shadow-black'}>
 			<!-- imagen del articulo -->
 
-			<button class="flex items-end rounded bg-slate-700 p-2 text-white">
-				"Aqui va una imagen"
-			</button>
+			<img
+				src="/image/estampado.webp"
+				alt="Qualcomm Snapdragon"
+				class="flex items-end rounded bg-slate-700 p-2 text-white"
+			/>
 
 			<!-- contador -->
 			<h1 class="flex items-center justify-center rounded-full border-2 bg-slate-700 p-2">
@@ -48,7 +50,10 @@
 
 			<!-- texto que describe el articulo -->
 
-			<h1>• Descripcion del articulo aqui</h1>
+			<h1 class="w-full max-w-sm text-sm">
+				| Son mas rentables que los disipadores comunes y su demanda es elevada estos ultimos
+				meses,en caso de escacear restablecer lo antes posible
+			</h1>
 		</div>
 
 		<!-- botones para agregar y restar inventario -->
@@ -70,7 +75,7 @@
 		<!-- qr code generator -->
 
 		<button class="flex rounded bg-slate-700 p-4 text-white hover:bg-slate-600">
-			QR Escaner
+			<a href="artic-estampados/qr-estampados"> QR Escaner</a>
 		</button>
 	</main>
 </Background>

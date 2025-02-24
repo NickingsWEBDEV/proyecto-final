@@ -26,7 +26,7 @@ export async function signIn(email: string, password: string) {
 		const token = await db.signin({
 			namespace: 'admin.general',
 			database: 'main',
-			access: 'user',
+			access: 'account',
 			variables: { email, password }
 		});
 

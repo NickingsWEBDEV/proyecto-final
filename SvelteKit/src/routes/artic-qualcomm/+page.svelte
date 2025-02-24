@@ -53,7 +53,7 @@
 
 			<!-- texto que describe el articulo -->
 
-			<h1 class="w-full max-w-sm gap-4 bg-slate-600 p-3 text-sm">
+			<h1 class="w-full max-w-sm gap-4 bg-slate-600 p-3 text-sm text-white">
 				• rara vez entran tecnicos a la tienda, pero las pocas veces que llegan suelen llevarse
 				varios de estos. Si se llegan a agotar informar inmediatamente.
 			</h1>
@@ -78,7 +78,7 @@
 		<!-- qr code generator -->
 
 		<button class="flex rounded bg-slate-700 p-4 text-white hover:bg-slate-600">
-			QR Escaner
+			<a href="artic-qualcomm/qr-qualcomm"> QR Escaner </a>
 		</button>
 	</main>
 </Background>
