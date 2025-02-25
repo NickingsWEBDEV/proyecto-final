@@ -1,9 +1,13 @@
+-- Definir la tabla de items
+
 DEFINE TABLE OVERWRITE category SCHEMAFULL
   PERMISSIONS
     FOR select WHERE $auth
     FOR create, update, delete WHERE $auth.is_admin;
 
 DEFINE FIELD OVERWRITE name ON TABLE category TYPE string;
+
+-- definir los permisos de la tabla, autoridad de tipo Admin
 
 DEFINE TABLE OVERWRITE categorizes SCHEMAFULL
   TYPE RELATION FROM category TO item
@@ -16,12 +20,16 @@ DEFINE TABLE OVERWRITE item SCHEMAFULL
     FOR select WHERE $auth
     FOR create, update, delete WHERE $auth.is_admin;
 
+-- definir los campos de la tabla items, name-description-price
+
 DEFINE FIELD OVERWRITE name ON TABLE item TYPE string;
 DEFINE FIELD OVERWRITE description ON TABLE item TYPE string;
 DEFINE FIELD OVERWRITE quantity ON TABLE item TYPE number DEFAULT 1;
 DEFINE FIELD OVERWRITE price ON TABLE item TYPE decimal;
 DEFINE FIELD OVERWRITE date_created ON TABLE item TYPE datetime VALUE time::now() DEFAULT time::now() READONLY;
 DEFINE FIELD OVERWRITE last_modified ON TABLE item TYPE datetime VALUE time::now() DEFAULT time::now();
+
+-- los distintos contenidos de la tabla
 
 CREATE item CONTENT {
     name: "adata",

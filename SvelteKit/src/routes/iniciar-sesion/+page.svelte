@@ -4,12 +4,11 @@
 	import { signIn } from '$lib/surreal';
 	import Alert from '$lib/components/Alert.svelte';
 
-	let correo = $state('');
-	let contrasena = $state('');
+	let email = $state('');
+	let password = $state('');
 	let mostrarErrorGenerico = $state(false);
 </script>
 
-<!-- caja principal -->
 <Background>
 	<h1 class="flex items-end justify-end p-2 text-neutral-500">
 		|"Failure is acceptable, giving up is not".
@@ -23,16 +22,15 @@
 				e.preventDefault();
 
 				try {
-					await signIn(correo, contrasena);
+					await signIn(email, password);
 
 					goto('/');
 				} catch (err) {
 					mostrarErrorGenerico = true;
 				}
-
-				goto('/');
 			}}
 		>
+			<!-- caja principal -->
 			<div
 				class="flex flex-col gap-7 rounded-2xl border-2 border-neutral-400 bg-neutral-600 p-7 text-xl shadow-md shadow-white"
 			>
@@ -45,14 +43,14 @@
 				<!-- donde se colocara la info -->
 
 				<input
-					bind:value={correo}
+					bind:value={email}
 					type="email"
 					placeholder="Correo"
 					class="flex rounded bg-slate-900 p-2 text-white"
 					required
 				/>
 				<input
-					bind:value={contrasena}
+					bind:value={password}
 					type="password"
 					placeholder="Contraseña"
 					class="flex rounded bg-slate-900 p-2 text-white"
