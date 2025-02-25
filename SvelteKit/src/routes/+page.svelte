@@ -16,8 +16,8 @@
 		<!-- Boton de cuenta y settings -->
 
 		<div class="flex flex-grow flex-row justify-end gap-5 text-4xl">
-			<a href="/administrar-cuentas">
-				<span class="icon"> manage_accounts </span>
+			<a href="/mini-tutorial">
+				<span class="material-symbols-outlined"> emoji_objects </span>
 			</a>
 		</div>
 	</ul>
