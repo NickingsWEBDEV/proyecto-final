@@ -36,4 +36,48 @@ CREATE item CONTENT {
     price: 400.00,
 };
 
-SELECT * FROM item;
+CREATE item CONTENT {
+    name: "estampados",
+    description: "marca estampados",
+    price: 800.00,
+};
+
+CREATE item CONTENT {
+    name: "skived-fin",
+    description: "marca skived-fin",
+    price: 800.00,
+};
+
+CREATE item CONTENT {
+    name: "intel",
+    description: "marca intel",
+    price: 400.00,
+};
+
+CREATE item CONTENT {
+    name: "kingstone",
+    description: "marca kingstone",
+    price: 100.00,
+};
+
+CREATE item CONTENT {
+    name: "knowhare",
+    description: "marca knowhare",
+    price: 100.00,
+};
+
+CREATE item CONTENT {
+    name: "qualcomm",
+    description: "marca qualcomm",
+    price: 400.00,
+};
+
+CREATE item CONTENT {
+    name: "forjados",
+    description: "marca forjados",
+    price: 800.00,
+
+};
+
+-- 1. Crear una pagina que muestre todos los nombres de articulos
+// 2. Cree otra pàgina que tenga un formulario para crear un artìculo nuevo.

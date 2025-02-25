@@ -26,7 +26,7 @@
 		<a
 			href="/ventilador"
 			class="rounded-full border-2 border-neutral-600 bg-neutral-500 p-2 text-white transition-colors hover:bg-neutral-400"
-			>«
+			><span class="material-symbols-outlined"> arrow_back </span>
 		</a>
 	</button>
 

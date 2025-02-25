@@ -8,7 +8,7 @@
 		<a
 			href="/artic-forjado"
 			class="rounded-full border-2 border-neutral-600 bg-neutral-500 p-2 text-white hover:bg-neutral-400"
-			>«
+			><span class="material-symbols-outlined"> arrow_back </span>
 		</a>
 	</button>
 

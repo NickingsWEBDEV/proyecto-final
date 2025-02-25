@@ -12,7 +12,7 @@
 <!-- caja principal -->
 <Background>
 	<h1 class="flex items-end justify-end p-2 text-neutral-500">
-		|"Failure is acceptable, giving up is not.".
+		|"Failure is acceptable, giving up is not".
 	</h1>
 
 	<!-- forma de iniciar sesion -->
