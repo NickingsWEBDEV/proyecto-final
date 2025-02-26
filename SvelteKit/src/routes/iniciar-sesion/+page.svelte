@@ -58,7 +58,14 @@
 				<!-- boton de la parte baja -->
 
 				<div class="flex flex-row space-x-5">
-					<button class="flex items-end rounded bg-orange-300 p-2 hover:bg-orange-200">Login</button
+					<button class="flex items-end rounded bg-orange-300 p-2 text-center hover:bg-orange-200"
+						>Login</button
+					>
+					<a
+						href="mailto:browndanthony859@gmail.com"
+						class=" rounded-full border-2 border-lime-200 bg-orange-500 p-3 text-2xl text-white shadow-sm shadow-black hover:bg-orange-400"
+					>
+						<span class="material-symbols-outlined"> person </span></a
 					>
 				</div>
 			</div>

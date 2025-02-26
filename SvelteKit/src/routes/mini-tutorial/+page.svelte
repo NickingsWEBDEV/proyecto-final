@@ -46,7 +46,7 @@
 				• Si notas que nos estamos quedando sin algun articulo en especifico, deja un mensaje en el
 				numero de abajo, es mi buzon personal y yo me ocupare de encargar una nueva orden de ese
 				articulo. Y en caso de haya ocurrido un error en el sistema, el correo del creador del
-				sistema esta a mano para consultas.
+				sistema esta a mano para consultas (es el mismo correo de la pagina para iniciar sesion).
 			</div>
 
 			<!-- botones de la parte baja -->
@@ -60,7 +60,7 @@
 					>
 				</div>
 
-				<div class="items-star flex justify-start">
+				<div class="flex items-start justify-start">
 					<a
 						href="mailto:browndanthony859@gmail.com"
 						class=" rounded-full border-2 border-lime-200 bg-orange-500 p-3 text-2xl text-white shadow-sm shadow-black hover:bg-orange-400"
