@@ -24,35 +24,34 @@
 	<button class="flex flex-col items-center justify-center text-center text-3xl">
 		<a
 			href="/ram"
-			class="rounded-full border-2 border-neutral-600 bg-neutral-500 p-2 text-white transition-colors hover:bg-neutral-300"
+			class="rounded-full border-2 border-lime-200 bg-orange-400 p-2 text-white transition-colors hover:bg-orange-300"
 			><span class="material-symbols-outlined"> arrow_back </span>
 		</a>
 	</button>
 
 	<!-- titulo -->
-	<h1 class="flex justify-end text-xl text-neutral-400">
-		|"Aquel que posea un que, puede superar cualquier como"
-	</h1>
+	<h1 class="flex justify-end text-xl text-white">|</h1>
 
 	<main class="flex min-h-screen items-center justify-center gap-4 rounded-full">
-		<div class={'rounded-md bg-neutral-500 p-3 shadow-sm shadow-black'}>
+		<div class={'rounded-md bg-orange-400 p-3 shadow-sm shadow-lime-200'}>
 			<!-- imagen del articulo -->
 			<img
 				src="/image/adata.jpeg"
 				alt="come and get your love"
-				class="flex items-center justify-center rounded bg-slate-700 p-2 text-white"
+				class="flex items-center justify-center rounded bg-orange-300 p-2 text-white"
 			/>
 
 			<!-- cantidad del articulo -->
-			<h1 class="flex items-center justify-center rounded-full border-2 bg-slate-700 p-2">
+			<h1
+				class="flex items-center justify-center rounded-full border-2 bg-orange-500 p-2 text-white"
+			>
 				QTY: {count}
 			</h1>
 
 			<!-- texto que describe el articulo -->
-			<h1 class="w-full max-w-sm gap-4 bg-slate-600 p-3 text-sm">
-				• ADATA era una mis marcas favoritas, hasta que descubri Kingstone y nada nunca fue igual.
-				¿Es raro si te digo que solo compraba esa marca porque me gusto su patron de colores colores
-				y su mascota?.
+			<h1 class="w-full max-w-sm gap-4 p-3 text-sm">
+				| Es una marca de menor potencia que Kingstone, pero eso no significa que no sea requerida,
+				si se empiezan a agotar existencias escribe a mi numero personal.
 			</h1>
 		</div>
 
@@ -60,13 +59,13 @@
 		<div class="flex flex-col gap-4">
 			<button
 				onclick={increment}
-				class=" flex rounded bg-slate-700 p-4 text-2xl text-white hover:bg-slate-600"
+				class=" flex rounded bg-orange-400 p-4 text-2xl text-white hover:bg-orange-300"
 			>
 				+
 			</button>
 			<button
 				onclick={decrement}
-				class="flex rounded bg-slate-700 p-4 text-3xl text-white hover:bg-slate-600"
+				class="flex rounded bg-orange-400 p-4 text-3xl text-white hover:bg-orange-300"
 			>
 				-
 			</button>
@@ -74,7 +73,7 @@
 
 		<!-- qr code generator -->
 
-		<button class="flex rounded bg-slate-700 p-4 text-white hover:bg-slate-600">
+		<button class="flex rounded bg-orange-400 p-4 text-white hover:bg-orange-300">
 			<a href="artic-adata/qr-adata"> QR Escaner </a>
 		</button>
 	</main>

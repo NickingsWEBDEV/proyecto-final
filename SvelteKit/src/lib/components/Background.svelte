@@ -9,6 +9,6 @@
 	const { class: className = '', children }: Props = $props();
 </script>
 
-<div class={'bg-zinc-800 p-4'}>
+<div class={'p-4'} style="background: linear-gradient(to bottom, #7f4ca5 20%, #721422 80%);">
 	{@render children()}
 </div>

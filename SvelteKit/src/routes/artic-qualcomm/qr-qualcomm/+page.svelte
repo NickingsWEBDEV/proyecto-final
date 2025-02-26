@@ -2,12 +2,15 @@
 	import QrCode from '$lib/components/Qr-code.svelte';
 </script>
 
-<main class="min-h-screen bg-zinc-800 p-4">
+<main
+	class="min-h-screen p-4"
+	style="background: linear-gradient(to bottom, #7f4ca5 20%, #721422 80%);"
+>
 	<!-- vuelve a su pagina anterior -->
 	<button class="flex items-start justify-start text-center text-3xl">
 		<a
 			href="/artic-qualcomm"
-			class="rounded-full border-2 border-neutral-600 bg-neutral-500 p-2 text-white hover:bg-neutral-400"
+			class="rounded-full border-2 border-lime-200 bg-orange-400 p-2 text-white hover:bg-orange-300"
 			><span class="material-symbols-outlined"> arrow_back </span>
 		</a>
 	</button>

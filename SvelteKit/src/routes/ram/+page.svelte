@@ -6,9 +6,7 @@
 
 <Background>
 	<Regreso>s</Regreso>
-	<h1 class="flex items-end justify-end p-1 text-xl text-neutral-400">
-		|"That's what I always say, they can put my clothes back on, they never do"
-	</h1>
+	<h1 class="flex items-end justify-end p-1 text-xl text-white">|</h1>
 
 	<main class="flex min-h-screen items-center justify-center">
 		<div class="flex-cols flex gap-64 text-2xl">

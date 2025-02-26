@@ -26,36 +26,34 @@
 		<a
 			href="/procesador"
 			class="
-		  rounded-full border-2 border-neutral-600 bg-neutral-500 p-2 text-white hover:bg-neutral-400"
+		  rounded-full border-2 border-lime-200 bg-orange-400 p-2 text-white hover:bg-orange-300"
 			><span class="material-symbols-outlined"> arrow_back </span>
 		</a>
 	</button>
 
 	<!-- titulo -->
-	<h1 class="flex justify-center text-neutral-400">
-		|"You're either perfect or you're not me"  - Perfect Cell
-	</h1>
+	<h1 class="flex justify-center text-white">|</h1>
 
 	<main class="flex min-h-screen items-center justify-center gap-4 rounded-full">
-		<div class={'rounded-md bg-neutral-500 p-4 shadow-sm shadow-black'}>
+		<div class={'rounded-md bg-orange-400 p-4 shadow-sm shadow-black'}>
 			<!-- imagen del articulo -->
 
 			<img
 				src="/image/qualcomm.jpeg"
 				alt="Qualcomm Snapdragon"
-				class="flex items-end rounded bg-slate-700 p-2 text-white"
+				class="flex items-end rounded bg-orange-300 p-2 text-white"
 			/>
 
 			<!-- cantidad del articulo -->
-			<h1 class="flex items-center justify-center rounded-full border-2 bg-slate-700 p-2">
+			<h1 class="flex items-center justify-center rounded-full border-2 bg-orange-500 p-2">
 				QTY: {count}
 			</h1>
 
 			<!-- texto que describe el articulo -->
 
-			<h1 class="w-full max-w-sm gap-4 bg-slate-600 p-3 text-sm text-white">
-				• rara vez entran tecnicos a la tienda, pero las pocas veces que llegan suelen llevarse
-				varios de estos. Si se llegan a agotar informar inmediatamente.
+			<h1 class="w-full max-w-sm gap-4 p-3 text-sm">
+				| Este procesador es uno de los productos que menos vende, creo que es debido a que es
+				mayormente utilizado por empresas cuando quieren ahorrar en componentes para sus hardwares.
 			</h1>
 		</div>
 
@@ -63,13 +61,13 @@
 		<div class="flex flex-col gap-4">
 			<button
 				onclick={increment}
-				class="flex rounded bg-slate-700 p-4 text-2xl text-white hover:bg-slate-600"
+				class="flex rounded bg-orange-400 p-4 text-2xl text-white hover:bg-orange-300"
 			>
 				+
 			</button>
 			<button
 				onclick={decrement}
-				class="flex rounded bg-slate-700 p-4 text-2xl text-white hover:bg-slate-600"
+				class="flex rounded bg-orange-400 p-4 text-2xl text-white hover:bg-orange-300"
 			>
 				-
 			</button>
@@ -77,7 +75,7 @@
 
 		<!-- qr code generator -->
 
-		<button class="flex rounded bg-slate-700 p-4 text-white hover:bg-slate-600">
+		<button class="flex rounded bg-orange-400 p-4 text-white hover:bg-orange-300">
 			<a href="artic-qualcomm/qr-qualcomm"> QR Escaner </a>
 		</button>
 	</main>

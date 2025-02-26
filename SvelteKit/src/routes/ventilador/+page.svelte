@@ -6,7 +6,7 @@
 
 <Background>
 	<Regreso>s</Regreso>
-	<h2 class="p-2 text-center text-xl text-neutral-400">"Trotz allem bist du immer noch du"</h2>
+	<h2 class="p-2 text-center text-xl text-white">|</h2>
 	<main class="flex min-h-screen items-center justify-center">
 		<div class="flex-cols flex gap-64 text-2xl">
 			<!-- caja de objetos -->

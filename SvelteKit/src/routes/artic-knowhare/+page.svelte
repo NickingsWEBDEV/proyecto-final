@@ -26,35 +26,35 @@
 		<a
 			href="/ram"
 			class="
-		  rounded-full border-2 border-neutral-600 bg-neutral-500 p-2 text-white transition-colors hover:bg-neutral-400"
+		  rounded-full border-2 border-lime-200 bg-orange-400 p-2 text-white transition-colors hover:bg-orange-300"
 			><span class="material-symbols-outlined"> arrow_back </span>
 		</a>
 	</button>
 
 	<!-- titulo -->
-	<h1 class="flex justify-end text-xl text-neutral-400">|"Yo soy Groot" - Groot ☺</h1>
+	<h1 class="flex justify-end text-xl text-white">|</h1>
 
 	<main class="flex min-h-screen items-center justify-center gap-4 rounded-full">
-		<div class={'rounded-md bg-neutral-500 p-3 shadow-sm shadow-black'}>
+		<div class={'rounded-md bg-orange-400 p-3 shadow-sm shadow-black'}>
 			<!-- imagen del articulo -->
 
 			<img
 				src="/image/groot.webp"
 				alt="Come and get your love"
-				class="flex items-end rounded bg-slate-700 p-2 text-white"
+				class="flex items-end rounded bg-orange-300 p-2 text-white"
 			/>
 
 			<!-- contador -->
-			<h1 class="flex items-center justify-center rounded-full border-2 bg-slate-700 p-2">
+			<h1 class="flex items-center justify-center rounded-full border-2 bg-orange-500 p-2">
 				QTY: {count}
 			</h1>
 
 			<!-- texto que describe el articulo -->
 
-			<h1 class="w-full max-w-sm gap-4 bg-slate-600 p-3 text-sm">
-				• Esta RAM es una de las mas veloces del mercado, presumiendo su capacidad para "Realizar
-				saltos luz" y ser la marca preferida por la NASA. fue muy dificil de conseguir, tuve que
-				intercambiar una protesis por solo un set de esas, asi que espero que no la hayas vendido.
+			<h1 class="w-full max-w-sm gap-4 p-3 text-sm">
+				| Esta unidad RAM es una de las mas veloces del mercado, presumiendo su capacidad para
+				"Realizar saltos luz" y ser la marca preferida por la NASA, ya que es utilizada mayormente
+				en sus computadoras.
 			</h1>
 		</div>
 
@@ -62,13 +62,13 @@
 		<div class="flex flex-col gap-4">
 			<button
 				onclick={increment}
-				class="flex rounded bg-slate-700 p-4 text-2xl text-white hover:bg-slate-600"
+				class="flex rounded bg-orange-400 p-4 text-2xl text-white hover:bg-orange-300"
 			>
 				+
 			</button>
 			<button
 				onclick={decrement}
-				class="flex rounded bg-slate-700 p-4 text-2xl text-white hover:bg-slate-600"
+				class="flex rounded bg-orange-400 p-4 text-2xl text-white hover:bg-orange-300"
 			>
 				-
 			</button>
@@ -76,7 +76,7 @@
 
 		<!-- qr code generator -->
 
-		<button class="flex rounded bg-slate-700 p-4 text-white hover:bg-slate-600">
+		<button class="flex rounded bg-orange-400 p-4 text-white hover:bg-orange-300">
 			<a href="artic-knowhare/qr-knowhare"> QR Escaner</a>
 		</button>
 	</main>
