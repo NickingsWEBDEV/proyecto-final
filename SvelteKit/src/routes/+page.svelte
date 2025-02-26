@@ -33,7 +33,7 @@
 		<ul
 			class="flex gap-4 rounded border-2 border-lime-300 bg-orange-400 p-4 text-center text-white shadow-sm shadow-lime-200"
 		>
-			<div class="text-5xl">PapuTech</div>
+			<div class="Font text-5xl">PapuTech</div>
 
 			<!-- Boton de la parte superior -->
 
