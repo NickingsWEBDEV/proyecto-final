@@ -2,8 +2,8 @@ import { Surreal } from 'surrealdb';
 import { browser } from '$app/environment';
 
 const db = new Surreal();
-
-await db.connect('http://localhost:8000/rpc', {
+//localhost:8000/version
+http: await db.connect('ws://localhost:8000/rpc', {
 	namespace: 'admin.general',
 	database: 'main'
 });

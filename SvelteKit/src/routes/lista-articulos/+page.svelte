@@ -1,7 +1,24 @@
-<script>
-	import Background from '$lib/components/Background.svelte';
-	import Items from '$lib/components/Items.svelte';
-	import Regreso from '$lib/components/Regreso.svelte';
+<script lang="ts">
+	import { db } from '$lib/surreal';
+	import { RecordId } from 'surrealdb';
+
+	type Articulo = {
+		id: RecordId;
+		name: string;
+		description: string;
+	};
+
+	async function listaArticulos(): Promise<Articulo[]> {
+		const [listaArticulos] = await db.query<[Articulo[]]>('SELECT * FROM item');
+
+		return listaArticulos;
+	}
+
+	let articulos: Articulo[] = $state([]);
+
+	listaArticulos().then((lista) => (articulos = lista));
+
+	$inspect(articulos);
 </script>
 
 <main
@@ -33,7 +50,9 @@
 			<div
 				class="text center border-lime-2x00 flex w-full max-w-sm flex-col gap-4 rounded-2xl border-2 bg-orange-300 p-3 text-xl text-white"
 			>
-				<Items />
+				{#each articulos as articulo}
+					{articulo.description}
+				{/each}
 			</div>
 		</div>
 	</main>
